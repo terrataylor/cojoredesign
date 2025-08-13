@@ -1,0 +1,8 @@
+.header .logo img {
+    max-height: 85px;
+}
+
+.hero-img img{
+    border-radius: 50%;
+    width: 84%;
+}
