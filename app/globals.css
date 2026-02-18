@@ -1,0 +1,18 @@
+@import url('../assets/css/main.css');
+@import url('../assets/css/style.css');
+
+/* Next.js specific styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure proper font variables */
+:root {
+  --default-font: var(--font-roboto);
+  --heading-font: var(--font-raleway);
+}
