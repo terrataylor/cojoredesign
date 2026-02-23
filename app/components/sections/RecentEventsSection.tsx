@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import Image from 'next/image'
+import './RecentEventsSection.css'
 
 export default function RecentEventsSection() {
   useEffect(() => {

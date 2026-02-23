@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import './ContactSection.css'
 
 interface ContactFormData {
     name: string

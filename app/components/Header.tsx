@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { initScrollSpy } from '../lib/scrollSpy'
+import './Header.css'
 
 export default function Header() {
   const [mobileNavActive, setMobileNavActive] = useState(false)
@@ -25,6 +26,36 @@ export default function Header() {
       if (cleanup) cleanup()
     }
   }, [])
+
+  useEffect(() => {
+    // Prevent body scroll when mobile menu is open
+    if (mobileNavActive) {
+      document.body.classList.add('mobile-nav-active')
+    } else {
+      document.body.classList.remove('mobile-nav-active')
+    }
+
+    return () => {
+      document.body.classList.remove('mobile-nav-active')
+    }
+  }, [mobileNavActive])
+
+  useEffect(() => {
+    // Close mobile menu on escape key
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && mobileNavActive) {
+        closeMobileNav()
+      }
+    }
+
+    if (mobileNavActive) {
+      window.addEventListener('keydown', handleEscape)
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleEscape)
+    }
+  }, [mobileNavActive])
 
   const toggleMobileNav = () => {
     setMobileNavActive(!mobileNavActive)

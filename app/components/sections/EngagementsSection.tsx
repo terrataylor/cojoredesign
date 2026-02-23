@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
+import './EngagementsSection.css'
 
 export default function EngagementsSection() {
   const isotopeRef = useRef<any>(null)

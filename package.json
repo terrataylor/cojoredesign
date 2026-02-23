@@ -10,6 +10,7 @@
     "copy-assets": "node scripts/copy-assets.js",
     "postinstall": "npm run copy-assets"
   },
+  "homepage": "https://dev.cojollc.com",
   "dependencies": {
     "@react-google-maps/api": "^2.19.0",
     "aos": "^2.3.4",

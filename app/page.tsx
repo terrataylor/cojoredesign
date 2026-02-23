@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import ScrollTop from './components/ScrollTop'
 import Preloader from './components/Preloader'
 import HeroSection from './components/sections/HeroSection'
+import ExecutiveSummarySection from './components/sections/ExecutiveSummarySection'
 import AboutSection from './components/sections/AboutSection'
 import ServicesSection from './components/sections/ServicesSection'
 import RecentEventsSection from './components/sections/RecentEventsSection'
@@ -18,7 +19,8 @@ export default function Home() {
       <Header />
       <main className="main">
         <HeroSection />
-        <AboutSection />
+        <ExecutiveSummarySection />
+        {/* <AboutSection /> */}
         <ServicesSection />
         <RecentEventsSection />
         <EngagementsSection />

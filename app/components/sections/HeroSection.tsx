@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import Image from 'next/image'
+import './HeroSection.css'
 
 export default function HeroSection() {
   useEffect(() => {
@@ -24,11 +25,7 @@ export default function HeroSection() {
             <h1>Courtney Johnson</h1>
             <h2>CoJo LLC</h2>
             <p>
-              Business Owner / Business Consultant / Board member<br />
-              Diversity & Inclusion Champion / Community Volunteer<br />
-              Vice President, Atlanta Life Insurance Company<br />
-              Vice Chair, Teachers Supply Closet & YWCA<br />
-              Podcast Hostess of Courtney&apos;s Corner
+            Board Leader, Strategic Operator & Community Impact Executive
             </p>
           </div>
           <div className="col-lg-6 order-1 order-lg-2 hero-img">

@@ -3,12 +3,14 @@ import Footer from '../components/Footer'
 import ScrollTop from '../components/ScrollTop'
 import Preloader from '../components/Preloader'
 import Scripts from '../components/Scripts'
+import AboutSection from '../components/sections/AboutSection'
 
 export default function CourtneysCorner() {
   return (
     <>
       <Preloader />
       <Header />
+      <AboutSection />
       <main className="main">
         <div className="page-title accent-background">
           <div className="container position-relative">

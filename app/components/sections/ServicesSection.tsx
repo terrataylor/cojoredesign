@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import './ServicesSection.css'
 
 export default function ServicesSection() {
   const [activeTab, setActiveTab] = useState('v-pills-home')
