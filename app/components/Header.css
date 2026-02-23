@@ -162,6 +162,14 @@ html {
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* Header background when scrolled past hero section */
+/* Higher specificity to override main.css */
+.header.past-hero,
+.header.past-hero.scrolled {
+  --background-color: #5846f9 !important;
+  background-color: #5846f9 !important;
+}
+
 /* Better mobile menu backdrop */
 @media (max-width: 1199px) {
   .mobile-nav-active .navmenu::before {

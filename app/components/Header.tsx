@@ -10,12 +10,26 @@ import './Header.css'
 export default function Header() {
   const [mobileNavActive, setMobileNavActive] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [pastHero, setPastHero] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 100)
+      
+      // Check if scrolled past hero section
+      const heroSection = document.getElementById('hero')
+      if (heroSection) {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight
+        setPastHero(window.scrollY > heroBottom)
+      } else {
+        // If hero section doesn't exist (e.g., on other pages), default to false
+        setPastHero(false)
+      }
     }
+    
+    // Check on mount and scroll
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     
     // Initialize scroll spy
@@ -25,7 +39,7 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll)
       if (cleanup) cleanup()
     }
-  }, [])
+  }, [pathname]) // Re-run when pathname changes to check for hero section
 
   useEffect(() => {
     // Prevent body scroll when mobile menu is open
@@ -87,7 +101,7 @@ export default function Header() {
   }
 
   return (
-    <header id="header" className={`header d-flex align-items-center fixed-top ${scrolled ? 'scrolled' : ''}`}>
+    <header id="header" className={`header d-flex align-items-center fixed-top ${scrolled ? 'scrolled' : ''} ${pastHero ? 'past-hero' : ''}`}>
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
         <Link href="/" className="logo d-flex align-items-center me-auto">
           <Image 
@@ -132,16 +146,16 @@ export default function Header() {
             </li>
             <li>
               <Link 
-                href="/#services" 
+                href="/#strategic-expertise" 
                 onClick={(e) => {
                   if (pathname === '/') {
-                    handleHashClick(e, '#services')
+                    handleHashClick(e, '#strategic-expertise')
                   } else {
                     closeMobileNav()
                   }
                 }}
               >
-                Business
+                Strategic Expertise
               </Link>
             </li>
             <li>

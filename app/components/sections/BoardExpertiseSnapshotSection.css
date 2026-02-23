@@ -1,0 +1,84 @@
+/* Board Expertise Snapshot Section Styles */
+
+.board-expertise {
+  padding: 80px 0;
+}
+
+.board-expertise .expertise-card {
+  background-color: var(--surface-color);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.board-expertise .expertise-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.board-expertise .expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.board-expertise .expertise-badge {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.board-expertise .expertise-badge:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.board-expertise .expertise-badge span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--heading-color);
+  line-height: 1.4;
+}
+
+@media (max-width: 991px) {
+  .board-expertise {
+    padding: 60px 0;
+  }
+
+  .board-expertise .expertise-card {
+    padding: 2rem;
+  }
+
+  .board-expertise .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .board-expertise .expertise-card {
+    padding: 1.5rem;
+  }
+
+  .board-expertise .expertise-card h2 {
+    font-size: 1.75rem;
+  }
+
+  .board-expertise .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .board-expertise .expertise-badge {
+    padding: 1rem;
+  }
+}

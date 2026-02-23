@@ -17,7 +17,8 @@ export default function ServicesSection() {
     <section id="services" className="services section">
       <div className="container section-title" data-aos="fade-up">
         <h2>What I do</h2>
-        <p>Managing properties. Growing businesses. Championing diversity and inclusion.</p>
+        <p>Private investment and operating platform focused on asset growth and strategic partnerships.
+        </p>
       </div>
 
       <div className="container">
@@ -33,7 +34,7 @@ export default function ServicesSection() {
                 <div className="service-item d-flex mb-1">
                   <div className="icon flex-shrink-0"><i className="bi bi-house"></i></div>
                   <div>
-                    <h4 className="title"><a href="#services" className="stretched-link service">Property Management</a></h4>
+                    <h4 className="title"><a href="#services" className="stretched-link service">Operating Platform</a></h4>
                     <p className="description">From keys to contracts, we handle it all.</p>
                   </div>
                 </div>
@@ -48,7 +49,7 @@ export default function ServicesSection() {
                 <div className="service-item d-flex mb-1">
                   <div className="icon flex-shrink-0"><i className="bi bi-tools"></i></div>
                   <div>
-                    <h4 className="title"><a href="#services" className="stretched-link service">Home Renovation</a></h4>
+                    <h4 className="title"><a href="#services" className="stretched-link service">Commercial Sophistication</a></h4>
                     <p className="description">Expert craftsmanship. Inspired design. Stunning results.</p>
                   </div>
                 </div>
@@ -63,7 +64,7 @@ export default function ServicesSection() {
                 <div className="service-item d-flex mb-1">
                   <div className="icon flex-shrink-0"><i className="bi bi-buildings"></i></div>
                   <div>
-                    <h4 className="title"><a href="#services" className="stretched-link service">Business Consulting and Investment</a></h4>
+                    <h4 className="title"><a href="#services" className="stretched-link service">Capital Mindset</a></h4>
                     <p className="description">Turning bold ideas into profitable realities.</p>
                   </div>
                 </div>
@@ -78,8 +79,8 @@ export default function ServicesSection() {
                 <div className="service-item d-flex mb-1">
                   <div className="icon flex-shrink-0"><i className="bi bi-globe-americas"></i></div>
                   <div>
-                    <h4 className="title"><a href="#services" className="stretched-link service">Ambassador for Diversity and Inclusion</a></h4>
-                    <p className="description">Empowering people. Enriching communities. Inspiring change.</p>
+                    <h4 className="title"><a href="#services" className="stretched-link service">Business Governance Exposure</a></h4>
+                    <p className="description">Exposure to a diverse portfolio of businesses and industries.</p>
                   </div>
                 </div>
               </button>

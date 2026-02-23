@@ -1,0 +1,68 @@
+/* CoJo LLC Section Styles */
+
+.cojo-llc {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.cojo-llc .image-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 10%) 0%, color-mix(in srgb, var(--accent-color), transparent 5%) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cojo-llc .image-placeholder .placeholder-content {
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.cojo-llc .image-placeholder .placeholder-content i {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.cojo-llc .image-placeholder .placeholder-content span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.cojo-llc .content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color);
+}
+
+.cojo-llc .content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 1.5rem;
+}
+
+.cojo-llc .content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .cojo-llc {
+    padding: 60px 0;
+  }
+
+  .cojo-llc .image-placeholder {
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .cojo-llc .content h2 {
+    font-size: 2rem;
+  }
+}

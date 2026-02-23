@@ -17,20 +17,13 @@ export default function ExecutiveSummarySection() {
           <div className="col-lg-10 mx-auto" data-aos="fade-up" data-aos-delay="100">
             <div className="content">
               <p>
-                Courtney Johnson is a senior executive and strategic operator with deep expertise in group benefits, 
-                reinsurance strategy, and commercial partnerships. She has led cross-functional initiatives focused on 
-                growth, operational efficiency, and risk management within highly regulated industries.
+              <strong>Courtney Johnson</strong> is a business strategist, entrepreneur, and multi-state real estate owner whose work explores the intersection of financial systems, housing stability, and economic mobility. At Atlanta Life Insurance Company, she drives strategic partnerships and growth initiatives focused on strengthening workforce resilience and expanding access to financial protection in a changing economic landscape. Her leadership reflects a deep understanding of how corporate decision-making, public policy, and market forces shape outcomes for working families.
               </p>
               <p>
-                Her leadership experience includes building scalable programs, advising on enterprise partnerships, and 
-                aligning business strategy with workforce and market dynamics. Through her private investment platform, 
-                CoJo LLC, she oversees strategic assets and operating initiatives that reflect a disciplined approach to 
-                growth and long-term value creation.
+              Alongside her corporate work, Courtney owns and manages a diversified real estate portfolio across multiple states, offering a practical lens on housing markets, ownership pathways, and long-term wealth building. Her entrepreneurial perspective informs conversations that move beyond theory—grounding economic dialogue in lived experience, operational insight, and business strategy.
               </p>
               <p>
-                Courtney offers boards a unique blend of operational insight, governance perspective, and 
-                partnership-driven strategy — particularly valuable to organizations navigating expansion, workforce 
-                transformation, or complex stakeholder environments.
+              Known for her ability to elevate complex discussions with clarity and purpose, Courtney brings a boardroom-level presence to conversations on housing, financial equity, and systemic change. Her work bridges sectors and perspectives, helping audiences connect policy, business realities, and human impact in meaningful ways.
               </p>
             </div>
           </div>

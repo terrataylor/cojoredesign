@@ -10,7 +10,7 @@ export default function CourtneysCorner() {
     <>
       <Preloader />
       <Header />
-      <AboutSection />
+     
       <main className="main">
         <div className="page-title accent-background">
           <div className="container position-relative">
@@ -18,7 +18,7 @@ export default function CourtneysCorner() {
             <p>Sharing insights on business, technology, insurance and philanthropy.</p>
           </div>
         </div>
-
+        <AboutSection />
         <section id="service-details" className="service-details section">
           <div className="container">
             <div className="row gy-4">
@@ -26,7 +26,7 @@ export default function CourtneysCorner() {
                 <video
                   src="https://cojollc.com/assets/mov/cc-intro.mp4"
                   className="img-fluid services-img"
-                  autoPlay
+                  // autoPlay
                   controls
                 ></video>
                 <h3 className="text-center">Welcome to Courtney&apos;s Corner</h3>
