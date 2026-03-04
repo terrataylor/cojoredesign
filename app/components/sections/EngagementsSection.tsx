@@ -15,7 +15,7 @@ export default function EngagementsSection() {
         const imagesLoaded = (await import('imagesloaded')).default
 
         const container = document.querySelector('.isotope-container')
-        if (container) {
+        if (container && container instanceof HTMLElement) {
           imagesLoaded(container, () => {
             isotopeRef.current = new Isotope(container, {
               itemSelector: '.isotope-item',

@@ -4,6 +4,7 @@ import ScrollTop from './components/ScrollTop'
 import Preloader from './components/Preloader'
 import HeroSection from './components/sections/HeroSection'
 import ExecutiveSummarySection from './components/sections/ExecutiveSummarySection'
+import LeadershipRecognitionSection from './components/sections/LeadershipRecognitionSection'
 import ValueForBoardsSection from './components/sections/ValueForBoardsSection'
 import StrategicExpertiseSection from './components/sections/StrategicExpertiseSection'
 import CoJoLLCSection from './components/sections/CoJoLLCSection'
@@ -25,6 +26,7 @@ export default function Home() {
       <main className="main">
         <HeroSection />
         <ExecutiveSummarySection />
+        <LeadershipRecognitionSection />
         <ServicesSection />
         <ValueForBoardsSection />
         <StrategicExpertiseSection />
@@ -32,7 +34,6 @@ export default function Home() {
         <BoardExpertiseSnapshotSection />
         <BoardInquiriesSection />
         {/* <AboutSection /> */}
-        {/*  */}
         <RecentEventsSection />
         <EngagementsSection />
         <TestimonialsSection />

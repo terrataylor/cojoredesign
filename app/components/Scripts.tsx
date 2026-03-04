@@ -3,16 +3,6 @@
 import { useEffect } from 'react'
 import Script from 'next/script'
 
-declare global {
-  interface Window {
-    AOS: any
-    GLightbox: any
-    Swiper: any
-    PureCounter: any
-    Isotope: any
-  }
-}
-
 export default function Scripts() {
   useEffect(() => {
     // Initialize AOS after scripts load

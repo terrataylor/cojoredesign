@@ -132,10 +132,10 @@ export default function Header() {
             </li>
             <li>
               <Link 
-                href="/#about" 
+                href="/#executive-summary" 
                 onClick={(e) => {
                   if (pathname === '/') {
-                    handleHashClick(e, '#about')
+                    handleHashClick(e, '#executive-summary')
                   } else {
                     closeMobileNav()
                   }
