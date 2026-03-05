@@ -16,11 +16,15 @@ export default function CoJoLLCSection() {
       <div className="container">
         <div className="row gy-4 align-items-center">
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div className="image-placeholder">
-              <div className="placeholder-content">
-                <i className="bi bi-building"></i>
-                <span>CoJo LLC</span>
-              </div>
+            <div className="image-container">
+              <Image
+                src="/assets/img/march2026/investmenthouse.jpg"
+                alt="CoJo LLC Investment Property"
+                width={600}
+                height={400}
+                className="img-fluid rounded"
+                style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+              />
             </div>
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
