@@ -30,7 +30,7 @@ export default function HeroSection() {
           </div>
           <div className="col-lg-6 order-1 order-lg-2 hero-img">
             <Image
-              src="/assets/img/hero-img.jpg"
+              src="/assets/img/courtney.png" 
               alt="Courtney Johnson"
               width={600}
               height={600}

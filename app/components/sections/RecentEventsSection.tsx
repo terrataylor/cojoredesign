@@ -42,23 +42,24 @@ export default function RecentEventsSection() {
           </div>
 
           <div className="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div className="pricing-item featured">
+            <div className="pricing-item featured" style={{padding: '0', height:"65%"}}>
               <div>
                 <Image
-                  src="/assets/img/shelbyJ.png"
+                  src="/assets/img/featuredsession.png"
                   alt="Shelby J Concert"
-                  width={400}
+                  width={500}
                   height={300}
+                  style={{ width: '105%', maxWidth: '105%', margin: 'auto' }}
                   className="img-fluid"
                 />
               </div>
-              <h3 className="mt-3">Shelby J Concert</h3>
+              {/* <h3 className="mt-3">Shelby J Concert</h3>
               <h5>Go Red - Woman of Impact 2025</h5>
               <p>
                 Join us for an unforgettable evening with Shelby J, a powerful voice for women&apos;s health and
                 empowerment. This concert is part of the Go Red - Woman of Impact 2025 campaign, raising awareness and
                 funds for heart disease research and prevention.
-              </p>
+              </p> */}
             </div>
           </div>
 
