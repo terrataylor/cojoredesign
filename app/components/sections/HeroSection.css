@@ -74,6 +74,24 @@
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+.hero .btn-board-bio {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #E0D40C;
+  border: 2px solid #E0D40C;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero .btn-board-bio:hover {
+  background-color: transparent;
+  color: #E0D40C;
+}
+
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }

@@ -28,7 +28,7 @@ export default function LeadershipRecognitionSection() {
         <div className="leadership-grid">
           <div className="leadership-card">
             <div className="leadership-card-image">
-              <Image
+              <Image 
                 src="/assets/img/march2026/courtneywhiteblazerspeaking.png"
                 alt="Courtney Johnson speaking at a leadership event"
                 fill
@@ -47,7 +47,7 @@ export default function LeadershipRecognitionSection() {
 
           <div className="leadership-card">
             <div className="leadership-card-image">
-              <Image
+              <Image 
                 src="/assets/img/march2026/courtneypanel.jpg"
                 alt="Panel setting reflecting professional recognition"
                 fill

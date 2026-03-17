@@ -66,7 +66,6 @@ export default function EngagementsSection() {
     { src: '/assets/img/engagements/20.jpg', alt: 'Engagement 20' },
     { src: '/assets/img/engagements/21.jpg', alt: 'Engagement 21' },
     { src: '/assets/img/engagements/22.jpg', alt: 'Engagement 22' },
-    { src: '/assets/img/engagements/23.png', alt: 'Engagement 23' },
   ]
 
   return (

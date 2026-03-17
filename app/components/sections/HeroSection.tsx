@@ -25,8 +25,17 @@ export default function HeroSection() {
             <h1>Courtney Johnson</h1>
             <h2>CoJo LLC</h2>
             <p>
-            Board Leader, Strategic Operator & Community Impact Executive
+              Board Leader, Strategic Operator & Community Impact Executive
             </p>
+            <div className="mt-3">
+              <a
+                href="/assets/docs/Courtney_Johnson_Board_Bio.docx"
+                className="btn btn-board-bio"
+                download
+              >
+                Download my Board Bio
+              </a>
+            </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2 hero-img">
             <Image
