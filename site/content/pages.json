@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "Biography",
+    "subtitle": "Professional profile, strategic focus, and operating approach.",
+    "heroHeadline": "Speaker & Strategic Leader",
+    "heroPlaceholder": "Placeholder: Courtney Johnson is a keynote speaker and executive who helps audiences connect board leadership, commercial strategy, and community impact. Replace this paragraph with your final speaker bio, signature topics, and how you collaborate with organizers—from keynotes and panels to moderated conversations with authors and executives."
+  },
+  "leadership": {
+    "title": "Leadership",
+    "subtitle": "Governance roles, strategic expertise, and board readiness."
+  },
+  "engagements": {
+    "title": "Gallery",
+    "subtitle": "Photo highlights from speaking engagements and community events."
+  },
+  "highlights": {
+    "title": "Highlights",
+    "subtitle": "Recent appearances, milestones, and partner feedback."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Connect for speaking, advisory, and board opportunities."
+  },
+  "courtneysCorner": {
+    "title": "Courtney's Corner",
+    "subtitle": "Sharing insights on business, technology, insurance and philanthropy."
+  }
+}

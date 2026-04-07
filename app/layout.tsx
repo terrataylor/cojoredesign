@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import { Roboto, Raleway } from 'next/font/google'
+import localFont from 'next/font/local'
+import { Lexend, Roboto } from 'next/font/google'
+import media from '../site/content/media.json'
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
@@ -16,11 +18,24 @@ const roboto = Roboto({
   display: 'swap',
 })
 
-const raleway = Raleway({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  style: ['normal', 'italic'],
+const lexend = Lexend({
   subsets: ['latin'],
-  variable: '--heading-font',
+  variable: '--font-lexend',
+  display: 'swap',
+})
+
+const gelasio = localFont({
+  src: [
+    { path: '../assets/fonts/Gelasio/static/Gelasio-Regular.ttf', weight: '400', style: 'normal' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-Medium.ttf', weight: '500', style: 'normal' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-SemiBold.ttf', weight: '600', style: 'normal' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-Bold.ttf', weight: '700', style: 'normal' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-Italic.ttf', weight: '400', style: 'italic' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-MediumItalic.ttf', weight: '500', style: 'italic' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-SemiBoldItalic.ttf', weight: '600', style: 'italic' },
+    { path: '../assets/fonts/Gelasio/static/Gelasio-BoldItalic.ttf', weight: '700', style: 'italic' },
+  ],
+  variable: '--font-gelasio',
   display: 'swap',
 })
 
@@ -36,10 +51,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${roboto.variable} ${raleway.variable}`}>
+    <html lang="en" className={`${roboto.variable} ${gelasio.variable} ${lexend.variable}`}>
       <head>
-        <link rel="icon" href="/assets/img/favicon.png" />
-        <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+        <link rel="icon" href={media.brand.favicon} />
+        <link rel="apple-touch-icon" href={media.brand.appleTouchIcon} />
       </head>
       <body className="index-page">
         {children}

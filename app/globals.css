@@ -1,5 +1,4 @@
-@import url('../assets/css/main.css');
-@import url('../assets/css/style.css');
+@import url('../template/assets/css/main.css');
 
 /* Next.js specific styles */
 html {
@@ -13,6 +12,110 @@ body {
 
 /* Ensure proper font variables */
 :root {
-  --default-font: var(--font-roboto);
-  --heading-font: var(--font-raleway);
+  --default-font: var(--font-lexend);
+  --heading-font: var(--font-gelasio);
+  --nav-font: var(--font-lexend);
+  --accent-color: #620082;
+  --contrast-color: #B271F5;
+}
+
+.dark-background {
+  --contrast-color: #B271F5;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none !important;
+}
+
+/* Ensure content remains visible in Next runtime */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.header,
+.scrolled .header,
+.hero {
+  background-color: #6E43DB !important;
+}
+
+/* Executive summary (home #about) body copy */
+#about .about-content p {
+  font-size: 0.9rem;
+}
+
+.hero .hero-image {
+  box-shadow: none !important;
+}
+
+#about-template {
+  background-color: #B271F5 !important;
+}
+
+#about-template .about-image .experience-badge,
+#about-template .about-image .experience-badge .years,
+#about-template .about-image .experience-badge .text {
+  color: #fff !important;
+}
+
+#about-template .about-content .cta-button .btn-primary,
+#about-template .about-content .cta-button .btn-primary:hover,
+#about-template .about-content .cta-button .btn-primary:focus {
+  color: #fff !important;
+}
+
+#work-process {
+  background-color: #F2EEE9 !important;
+}
+
+#work-process .steps-list .step-item .step-number .bi {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+#work-process .steps-list .step-item .step-number .speaking-handshake-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  #work-process .steps-list .step-item .step-number .bi {
+    font-size: 1.15rem;
+  }
+
+  #work-process .steps-list .step-item .step-number .speaking-handshake-icon {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+}
+
+p,
+button,
+.btn,
+input,
+textarea,
+select {
+  font-family: var(--font-lexend), sans-serif;
+}
+
+/* Ensure readable white text on contrast-color backgrounds */
+.bg-contrast,
+.contrast-background {
+  background-color: var(--contrast-color) !important;
+  color: #fff !important;
+}
+
+.bg-contrast *,
+.contrast-background * {
+  color: #fff !important;
+}
+
+[style*="background-color: var(--contrast-color)"],
+[style*="background: var(--contrast-color)"] {
+  color: #fff !important;
 }

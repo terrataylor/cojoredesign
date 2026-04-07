@@ -1,0 +1,15 @@
+{
+  "primary": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Strategic Expertise", "href": "/#strategic-expertise" },
+    { "label": "Speaking Engagements", "href": "/#engagements" },
+    { "label": "Testimonials", "href": "/#testimonials" },
+    { "label": "Courtney's Corner", "href": "/courtneys-corner" },
+    { "label": "Contact", "href": "/#contact" }
+  ],
+  "footerSocial": [
+    { "platform": "Instagram", "href": "https://www.instagram.com/cojo.dreamhomes/" },
+    { "platform": "LinkedIn", "href": "https://www.linkedin.com/in/courtney-johnson-cojollc/" }
+  ]
+}

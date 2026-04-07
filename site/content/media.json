@@ -1,0 +1,32 @@
+{
+  "brand": {
+    "logo": "/assets/img/logo.png",
+    "favicon": "/assets/img/favicon.png",
+    "appleTouchIcon": "/assets/img/apple-touch-icon.png"
+  },
+  "hero": {
+    "portrait": "/assets/img/courtney.png",
+    "background": "/assets/img/hero-bg.jpg"
+  },
+  "about": {
+    "portrait": "/assets/img/about.jpg"
+  },
+  "leadership": {
+    "board": "/assets/img/march2026/courtneywhiteblazerspeaking.png",
+    "awards": "/assets/img/march2026/courtneypanel.jpg",
+    "community": "/assets/img/march2026/courtneybooth.jpg"
+  },
+  "cojo": {
+    "investmentProperty": "/assets/img/march2026/investmenthouse.jpg"
+  },
+  "properties": {
+    "omaha": "/assets/img/properties/omaha.png",
+    "texas": "/assets/img/properties/texas.png"
+  },
+  "highlights": {
+    "cheryl": "/assets/img/cheryl.png",
+    "featuredSession": "/assets/img/featuredsession.png",
+    "acknowledgement": "/assets/img/acknowledgement.jpg"
+  },
+  "engagementsDirectory": "/assets/img/engagements/"
+}

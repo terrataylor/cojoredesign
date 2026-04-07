@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "name": "Courtney Johnson",
+    "organization": "CoJo LLC",
+    "tagline": "Board Leader, Strategic Operator & Community Impact Executive",
+    "primaryCta": {
+      "label": "Download my Board Bio",
+      "href": "/assets/docs/Courtney_Johnson_Board_Bio.docx",
+      "download": true
+    },
+    "image": {
+      "src": "/assets/img/courtney.png",
+      "alt": "Courtney Johnson"
+    }
+  },
+  "sectionOrder": [
+    "executiveSummary",
+    "leadershipRecognition",
+    "services",
+    "valueForBoards",
+    "strategicExpertise",
+    "cojoLlc",
+    "boardExpertiseSnapshot",
+    "boardInquiries",
+    "recentEvents",
+    "engagements",
+    "testimonials",
+    "contact"
+  ]
+}

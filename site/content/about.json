@@ -1,0 +1,23 @@
+{
+  "executiveSummary": {
+    "heading": "Executive Summary",
+    "titleLine": {
+      "prefix": "Strategic",
+      "emphasis": "Leadership"
+    },
+    "paragraphs": [
+      "Courtney Johnson is a business strategist, entrepreneur, and multi-state real estate owner whose work explores the intersection of financial systems, housing stability, and economic mobility. At Atlanta Life Insurance Company, she drives strategic partnerships and growth initiatives focused on strengthening workforce resilience and expanding access to financial protection in a changing economic landscape. Her leadership reflects a deep understanding of how corporate decision-making, public policy, and market forces shape outcomes for working families.",
+      "Alongside her corporate work, Courtney owns and manages a diversified real estate portfolio across multiple states, offering a practical lens on housing markets, ownership pathways, and long-term wealth building. Her entrepreneurial perspective informs conversations that move beyond theory-grounding economic dialogue in lived experience, operational insight, and business strategy.",
+      "Known for her ability to elevate complex discussions with clarity and purpose, Courtney brings a boardroom-level presence to conversations on housing, financial equity, and systemic change. Her work bridges sectors and perspectives, helping audiences connect policy, business realities, and human impact in meaningful ways."
+    ]
+  },
+  "aboutSection": {
+    "heading": "Welcome to my personal website!",
+    "intro": "I'm thrilled to have you here. This website is a reflection of who I am, my passions, and the things I love to do. Through this platform, I aim to share my experiences, insights, and knowledge on various topics that interest me. From my personal companies, partnership companies and community investments - you'll find a diverse range of content that I hope will engage and inspire you. So, take a moment to explore, connect, and embark on a journey of discovery with me. Thank you for visiting, and I hope you enjoy your time here!",
+    "bio": "Courtney Johnson is the Vice President, Business Development at Atlanta Life Insurance Company. With over 22 years of experience in insurance and finance, she dedicates her free time to volunteering in the Charleston community. Courtney was elected to President of the board of the Greater Charleston YWCA, also an active board member of the Teacher's Supply Closet, and is a member of the Charleston Links, Inc. Additionally, she is passionate about investing in the communities she has lived in or visited as a former military dependent. Courtney is the proud owner of CoJo, LLC, a Property Management & Investment Company with ventures in SC, NC, and NE. She is also a co-owner of Coer, LLC, another property investment company with ventures in TX and NE. As she establishes her presence in the Charleston area, Courtney has silently invested in local businesses, nurturing her roots within the community.",
+    "image": {
+      "src": "/assets/img/about.jpg",
+      "alt": "About Courtney Johnson"
+    }
+  }
+}

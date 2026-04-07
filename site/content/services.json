@@ -1,0 +1,38 @@
+{
+  "heading": "Our Approach",
+  "subheading": "Real estate development, investment, and property stewardship across multiple U.S. markets.",
+  "pillars": [
+    {
+      "title": "Operating Platform",
+      "teaser": "From acquisition to operations, I manage real estate assets with a hands-on ownership approach.",
+      "body": "CoJo LLC is a real estate development and investment company focused on acquiring, improving, and managing residential properties. My work includes property acquisition, renovation oversight, tenant management, and long-term asset stewardship designed to create stable, income-producing properties."
+    },
+    {
+      "title": "Development & Commercial Strategy",
+      "teaser": "Transforming properties through thoughtful renovation and strategic development.",
+      "body": "I identify properties with strong potential and invest in improvements that enhance both livability and long-term value. My approach focuses on responsible renovation, thoughtful property management, and development strategies that support strong neighborhoods and sustainable property performance."
+    },
+    {
+      "title": "Capital Allocation",
+      "teaser": "Investing in real estate opportunities that generate long-term value.",
+      "body": "Through CoJo LLC, I deploy capital into residential properties with strong fundamentals and long-term growth potential. My portfolio includes residential investment properties across North Carolina, South Carolina, Texas, and Nebraska."
+    },
+    {
+      "title": "Governance and Board Leadership",
+      "teaser": "Leadership grounded in strategy, accountability, and community impact.",
+      "body": "In addition to leading CoJo LLC, I bring executive leadership experience and board service across nonprofit and civic organizations. This perspective informs my commitment to responsible development and long-term stewardship."
+    }
+  ],
+  "properties": [
+    {
+      "name": "Dundee Rental (Coming Soon)",
+      "location": "Omaha, NE",
+      "image": "/assets/img/properties/omaha.png"
+    },
+    {
+      "name": "Comfy 4BR - The \"Aero\" in Schertz",
+      "location": "Schertz, TX",
+      "image": "/assets/img/properties/texas.png"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "about": {
+    "title": "Biography",
+    "subtitle": "Professional profile, strategic focus, and operating approach."
+  },
+  "leadership": {
+    "title": "Leadership",
+    "subtitle": "Governance roles, strategic expertise, and board readiness."
+  },
+  "engagements": {
+    "title": "Gallery",
+    "subtitle": "Photo highlights from speaking engagements and community events."
+  },
+  "highlights": {
+    "title": "Highlights",
+    "subtitle": "Recent appearances, milestones, and partner feedback."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Connect for speaking, advisory, and board opportunities."
+  },
+  "courtneysCorner": {
+    "title": "Courtney's Corner",
+    "subtitle": "Sharing insights on business, technology, insurance and philanthropy."
+  }
+}

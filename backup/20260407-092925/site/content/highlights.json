@@ -1,0 +1,34 @@
+{
+  "recentEvents": {
+    "heading": "Recent Events",
+    "subheading": "Some of my recent events",
+    "items": [
+      {
+        "title": "Cheryl Manigo",
+        "meta": "Lifestyle Manager",
+        "image": "/assets/img/cheryl.png",
+        "description": "I am excited to share some great news with you! CoJo LLC is growing, and to better serve our expanding operations, we've brought on a Lifestyle Manager, Cheryl Manigo, to help manage our properties, streamline our various ventures, and personal growth for the future."
+      },
+      {
+        "title": "Emerge Financial Health Speakers 2026",
+        "meta": "Emerge Financial Health",
+        "image": "/assets/img/featuredsession.png",
+        "link": "https://finhealthnetwork.org/emerge-financial-health-speakers-2026/",
+        "description": "Scaling Progress, Shaping the Future. May 19-21, 2026 | InterContinental Buckhead | Atlanta, GA. In a period of rapid innovation and rising expectations, financial health is shaped by the decisions institutions make-and the impact those decisions have."
+      },
+      {
+        "title": "Go Red for Women",
+        "meta": "Woman of Impact Campaign",
+        "image": "/assets/img/acknowledgement.jpg",
+        "description": "Each year a select group of individuals from communities across the country are nominated to be a part of this 9-week blind competition because of their passion and drive to make a difference."
+      }
+    ]
+  },
+  "testimonials": [
+    "Incredibly insightful and educational. I learned so many practical and innovative ways to be impactful in ways to not only widen leaderships' lenses regarding D&I, but also the positive effect it has on the business.",
+    "Very enlightening, engaging and informative!",
+    "One of my favorite parts was hearing how they felt about Prudential's response to its historical role in denying Black clients the same financial growth and investment opportunities that were offered to white people.",
+    "I liked Courtney and Trish's positive and polished delivery.",
+    "I have chills. That was amazing and I could feel your pride for your company in setting the example."
+  ]
+}

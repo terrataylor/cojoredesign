@@ -1,0 +1,107 @@
+/* Board Inquiries Section Styles */
+
+.board-inquiries {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.board-inquiries .inquiries-content {
+  text-align: center;
+  background-color: var(--surface-color);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.board-inquiries .inquiries-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color);
+}
+
+.board-inquiries .inquiries-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 1rem;
+}
+
+.board-inquiries .inquiries-content p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.board-inquiries .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.board-inquiries .btn-primary,
+.board-inquiries .btn-secondary {
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.board-inquiries .btn-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+}
+
+.board-inquiries .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 10%);
+  border-color: color-mix(in srgb, var(--accent-color), black 10%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.board-inquiries .btn-secondary {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.board-inquiries .btn-secondary:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 991px) {
+  .board-inquiries {
+    padding: 60px 0;
+  }
+
+  .board-inquiries .inquiries-content {
+    padding: 2rem;
+  }
+
+  .board-inquiries .inquiries-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .board-inquiries .inquiries-content {
+    padding: 1.5rem;
+  }
+
+  .board-inquiries .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .board-inquiries .btn-primary,
+  .board-inquiries .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}

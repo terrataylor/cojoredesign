@@ -1,0 +1,11 @@
+/* Executive Summary Section Styles */
+
+/* This section uses standard section classes, minimal custom styling needed */
+#executive-summary .content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+#executive-summary .content p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,69 @@
+/* Strategic Expertise Section Styles */
+
+.strategic-expertise {
+  padding: 80px 0;
+}
+
+.strategic-expertise .expertise-item {
+  background-color: var(--surface-color);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strategic-expertise .expertise-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.strategic-expertise .expertise-item .icon {
+  width: 70px;
+  height: 70px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.strategic-expertise .expertise-item:hover .icon {
+  background-color: var(--accent-color);
+}
+
+.strategic-expertise .expertise-item .icon i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.strategic-expertise .expertise-item:hover .icon i {
+  color: var(--contrast-color);
+}
+
+.strategic-expertise .expertise-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.strategic-expertise .expertise-item p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--default-color);
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .strategic-expertise {
+    padding: 60px 0;
+  }
+
+  .strategic-expertise .expertise-item {
+    margin-bottom: 1.5rem;
+  }
+}
