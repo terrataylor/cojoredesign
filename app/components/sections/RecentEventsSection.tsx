@@ -42,24 +42,26 @@ export default function RecentEventsSection() {
           </div>
 
           <div className="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div className="pricing-item featured" style={{padding: '0', height:"65%"}}>
+            <div className="pricing-item featured">
               <div>
                 <Image
                   src="/assets/img/featuredsession.png"
-                  alt="Shelby J Concert"
+                  alt="Upcoming Speaking Engagement"
                   width={500}
                   height={300}
                   style={{ width: '105%', maxWidth: '105%', margin: 'auto' }}
                   className="img-fluid"
                 />
               </div>
-              {/* <h3 className="mt-3">Shelby J Concert</h3>
-              <h5>Go Red - Woman of Impact 2025</h5>
-              <p>
-                Join us for an unforgettable evening with Shelby J, a powerful voice for women&apos;s health and
-                empowerment. This concert is part of the Go Red - Woman of Impact 2025 campaign, raising awareness and
-                funds for heart disease research and prevention.
-              </p> */}
+              <h3 className="mt-3"><a href="https://finhealthnetwork.org/emerge-financial-health-speakers-2026/"> Emerge Financial Health Speakers 2026</a></h3>
+              <h5>Emerge Financial Health</h5>
+               <p>               
+              
+                Scaling Progress, Shaping the Future<br/>
+                May 19-21, 2026 | InterContinental Buckhead | Atlanta, GA<br/>
+                <br/>
+                In a period of rapid innovation and rising expectations, financial health is shaped by the decisions institutions make—and the impact those decisions have. EMERGE 2026 brings leaders together to examine how trust is earned, how technology reshapes risk and opportunity, and how standards create clarity in moments of change. The focus is on moving from intent to impact, and building systems that work for people and endure.
+              </p>
             </div>
           </div>
 

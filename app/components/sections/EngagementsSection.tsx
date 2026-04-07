@@ -46,9 +46,9 @@ export default function EngagementsSection() {
   const engagements = [
     { src: '/assets/img/engagements/1.jpg', alt: 'Engagement 1' },
     { src: '/assets/img/engagements/2.jpg', alt: 'Engagement 2' },
-    { src: '/assets/img/engagements/3.JPG', alt: 'Engagement 3' },
-    { src: '/assets/img/engagements/4.JPG', alt: 'Engagement 4' },
-    { src: '/assets/img/engagements/5.JPG', alt: 'Engagement 5' },
+    { src: '/assets/img/engagements/3.jpg', alt: 'Engagement 3' },
+    { src: '/assets/img/engagements/4.jpg', alt: 'Engagement 4' },
+    { src: '/assets/img/engagements/5.jpg', alt: 'Engagement 5' },
     { src: '/assets/img/engagements/6.jpg', alt: 'Engagement 6' },
     { src: '/assets/img/engagements/7.jpg', alt: 'Engagement 7' },
     { src: '/assets/img/engagements/8.jpg', alt: 'Engagement 8' },
