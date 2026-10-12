@@ -1,0 +1,8 @@
+.env*
+.next
+out
+node_modules
+.specstory
+backup
+email-service
+index.zip
