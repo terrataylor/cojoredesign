@@ -1,0 +1,727 @@
+.myla-page {
+  --myla-emerald: #0f4d34;
+  --myla-emerald-dark: #0a3a27;
+  --myla-gold: #d4a63a;
+  --myla-gold-light: #f3e3b5;
+  --myla-ivory: #faf6ec;
+  --myla-ivory-dark: #f1ead8;
+  --myla-ink: #1d2420;
+  --myla-muted: #5b625d;
+  --myla-header-h: 72px;
+
+  background: var(--myla-ivory);
+  color: var(--myla-ink);
+  font-family: var(--font-lexend), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.myla-page h1,
+.myla-page h2,
+.myla-page h3 {
+  font-family: var(--font-gelasio), Georgia, serif;
+  color: var(--myla-ink);
+  line-height: 1.12;
+  margin: 0 0 0.5rem;
+}
+
+.myla-page p {
+  margin: 0 0 0.75rem;
+}
+
+.myla-page img {
+  max-width: 100%;
+  display: block;
+}
+
+.myla-page a {
+  color: inherit;
+}
+
+#top,
+#stays,
+#transport,
+#inquire {
+  scroll-margin-top: calc(var(--myla-header-h) + 12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+.myla-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Buttons and shared bits */
+.myla-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.myla-btn:hover {
+  transform: translateY(-1px);
+}
+
+.myla-btn:focus-visible,
+.myla-page a:focus-visible,
+.myla-page summary:focus-visible {
+  outline: 3px solid var(--myla-gold);
+  outline-offset: 2px;
+}
+
+.myla-page .myla-btn-primary {
+  background: var(--myla-emerald);
+  color: #fff;
+  border-color: var(--myla-gold);
+}
+
+.myla-page .myla-btn-primary:hover {
+  background: var(--myla-emerald-dark);
+  color: #fff;
+}
+
+.myla-page .myla-btn-outline {
+  background: #fff;
+  color: var(--myla-emerald);
+  border-color: var(--myla-gold);
+}
+
+.myla-page .myla-btn-outline:hover {
+  background: var(--myla-gold-light);
+}
+
+.myla-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.8rem;
+  color: var(--myla-gold);
+  font-weight: 600;
+}
+
+.myla-eyebrow::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 2px;
+  background: var(--myla-gold);
+  margin-top: 0.5rem;
+}
+
+.myla-lead {
+  font-size: 1.15rem;
+  color: var(--myla-muted);
+}
+
+.myla-muted {
+  color: var(--myla-muted);
+  font-size: 0.9rem;
+}
+
+.myla-link {
+  color: var(--myla-emerald) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--myla-gold);
+}
+
+/* Header */
+.myla-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(250, 246, 236, 0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--myla-gold-light);
+}
+
+.myla-header-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 0.75rem;
+  align-items: center;
+  min-height: var(--myla-header-h);
+}
+
+.myla-back-link {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--myla-ink) !important;
+}
+
+.myla-header-logo {
+  align-self: start;
+  justify-self: center;
+  background: var(--myla-emerald);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 6px 16px rgba(15, 77, 52, 0.25);
+}
+
+.myla-header-logo img {
+  height: 48px;
+  width: auto;
+}
+
+.myla-back-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.myla-header-nav {
+  justify-self: end;
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.myla-header-nav a:hover {
+  color: var(--myla-emerald);
+}
+
+.myla-hide-sm {
+  display: none;
+}
+
+/* Hero */
+.myla-hero {
+  background: linear-gradient(180deg, var(--myla-ivory) 0%, var(--myla-ivory-dark) 100%);
+  padding: 2.5rem 0 2rem;
+  border-bottom: 1px solid var(--myla-gold-light);
+}
+
+.myla-hero-inner {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.myla-hero h1 {
+  font-size: clamp(2.1rem, 7vw, 3.6rem);
+  font-weight: 700;
+}
+
+.myla-hero-intro {
+  font-size: 1.1rem;
+  color: var(--myla-muted);
+}
+
+.myla-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.myla-hero-mascots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+/* Stays */
+.myla-stays {
+  background: var(--myla-ivory);
+  padding: 3rem 0;
+}
+
+.myla-stays-intro {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.myla-stays h2 {
+  font-size: clamp(2.4rem, 8vw, 4rem);
+  font-weight: 700;
+}
+
+.myla-gallery-featured,
+.myla-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.myla-gallery-featured {
+  aspect-ratio: 16 / 9;
+}
+
+.myla-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.myla-gallery img {
+  aspect-ratio: 3 / 2;
+}
+
+.myla-away-card,
+.myla-detail-card,
+.myla-hosts,
+.myla-faq,
+.myla-inquiry-card {
+  background: #fff;
+  border: 1px solid var(--myla-gold-light);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.myla-away-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.myla-away-card h3,
+.myla-inquiry-card h3 {
+  font-size: 1.6rem;
+  color: var(--myla-emerald);
+}
+
+.myla-details {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.myla-detail-card h3,
+.myla-hosts h3,
+.myla-faq h3 {
+  font-size: 1.25rem;
+  color: var(--myla-emerald);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.myla-detail-card h3 i {
+  color: var(--myla-gold);
+}
+
+.myla-detail-card ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.myla-hosts-faq {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.myla-faq details {
+  border-top: 1px solid var(--myla-ivory-dark);
+  padding: 0.75rem 0;
+}
+
+.myla-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.myla-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.myla-faq summary::after {
+  content: '+';
+  color: var(--myla-gold);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.myla-faq details[open] summary::after {
+  content: '\2212';
+}
+
+.myla-faq details p {
+  margin: 0.5rem 0 0;
+  color: var(--myla-muted);
+}
+
+.myla-inquiry-card {
+  margin-top: 2rem;
+  border-color: var(--myla-gold);
+  display: grid;
+  gap: 1rem;
+  align-items: end;
+}
+
+.myla-inquiry-mascot {
+  display: none;
+}
+
+/* Forms */
+.myla-form {
+  margin-top: 1rem;
+}
+
+.myla-form-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.myla-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.myla-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.myla-optional {
+  font-weight: 400;
+  color: var(--myla-muted);
+}
+
+.myla-field input,
+.myla-field textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #d6d0bf;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+  color: var(--myla-ink);
+}
+
+.myla-field input:focus,
+.myla-field textarea:focus {
+  outline: none;
+  border-color: var(--myla-emerald);
+  box-shadow: 0 0 0 3px rgba(15, 77, 52, 0.15);
+}
+
+.myla-field input[aria-invalid='true'],
+.myla-field textarea[aria-invalid='true'] {
+  border-color: #b3261e;
+}
+
+.myla-error {
+  color: #b3261e;
+  font-size: 0.8rem;
+}
+
+.myla-submit {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.myla-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.myla-form-note {
+  font-size: 0.85rem;
+  color: var(--myla-muted);
+  margin-top: 0.6rem;
+}
+
+.myla-alert {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.myla-alert-success {
+  background: #e3f2e9;
+  color: var(--myla-emerald-dark);
+  border: 1px solid #9fcfb2;
+}
+
+.myla-alert-error {
+  background: #fbe9e7;
+  color: #8c1d18;
+  border: 1px solid #f0b3ad;
+}
+
+.myla-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Transport */
+.myla-transport {
+  background: linear-gradient(135deg, var(--myla-emerald-dark) 0%, var(--myla-emerald) 100%);
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+.myla-transport h2 {
+  color: #fff;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.myla-transport .myla-lead,
+.myla-transport p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.myla-transport-inner {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.myla-badge {
+  display: inline-block;
+  background: var(--myla-gold);
+  color: var(--myla-emerald-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.myla-goods-only {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.myla-transport-form {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 166, 58, 0.5);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+
+.myla-transport-form h3 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.myla-transport .myla-field label {
+  color: #fff;
+}
+
+.myla-transport .myla-error {
+  color: #ffc9c4;
+}
+
+.myla-transport .myla-btn-primary {
+  background: #fff;
+  color: var(--myla-emerald);
+}
+
+.myla-transport .myla-btn-primary:hover {
+  background: var(--myla-gold-light);
+  color: var(--myla-emerald-dark);
+}
+
+.myla-transport .myla-form-note {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.myla-transport .myla-alert-success {
+  color: var(--myla-emerald-dark);
+}
+
+.myla-transport .myla-alert-error {
+  color: #8c1d18;
+}
+
+.myla-transport-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 1rem;
+  align-items: end;
+}
+
+.myla-transport-van {
+  border-radius: 8px;
+}
+
+/* Footer */
+.myla-footer {
+  background: var(--myla-emerald-dark);
+  color: #fff;
+  padding: 1.75rem 0;
+  border-top: 3px solid var(--myla-gold);
+}
+
+.myla-footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.myla-footer-logo {
+  height: 72px;
+  width: auto;
+}
+
+.myla-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.myla-page .myla-footer-nav a {
+  color: #fff;
+}
+
+.myla-page .myla-footer-nav a:hover {
+  color: var(--myla-gold);
+}
+
+.myla-footer-copy {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .myla-hide-sm {
+    display: inline;
+  }
+
+  .myla-header-inner {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .myla-back-label {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  .myla-header-logo img {
+    height: 64px;
+  }
+
+  .myla-header-nav {
+    gap: 1.75rem;
+    font-size: 0.9rem;
+  }
+
+  .myla-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .myla-away-card {
+    grid-column: 1 / -1;
+  }
+
+  .myla-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .myla-field-full {
+    grid-column: 1 / -1;
+  }
+
+  .myla-submit {
+    width: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .myla-page {
+    --myla-header-h: 80px;
+  }
+
+  .myla-header-logo img {
+    height: 80px;
+  }
+
+  .myla-hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .myla-hero-inner {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+  }
+
+  .myla-stays {
+    padding: 4.5rem 0;
+  }
+
+  .myla-stays-intro {
+    grid-template-columns: 1fr 1.25fr;
+  }
+
+  .myla-gallery {
+    grid-template-columns: 1fr 1fr 0.9fr;
+  }
+
+  .myla-away-card {
+    grid-column: auto;
+  }
+
+  .myla-details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .myla-hosts-faq {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .myla-inquiry-card {
+    grid-template-columns: 1fr 220px;
+    padding: 2rem;
+  }
+
+  .myla-inquiry-mascot {
+    display: block;
+  }
+
+  .myla-form-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .myla-transport .myla-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .myla-transport-inner {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}

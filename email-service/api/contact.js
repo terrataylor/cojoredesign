@@ -6,6 +6,7 @@ const {
   createConfirmationTextEmail,
   isValidEmail 
 } = require('../lib/email')
+const { handleCors, parseJsonBody } = require('../lib/cors')
 
 /**
  * Standalone Vercel Serverless Function
@@ -16,55 +17,15 @@ const {
  * - If not set, defaults to allowing localhost only.
  */
 module.exports = async function handler(req, res) {
-  // ---- CORS / Preflight
-  const origin = req.headers.origin || req.headers.referer?.split('/').slice(0, 3).join('/')
-  const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000')
-    .split(',')
-    .map((s) => s.trim())
-    .filter(Boolean)
-
-  // Always set CORS headers for preflight
-  res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
-  res.setHeader('Access-Control-Allow-Credentials', 'false')
-
-  // Handle preflight requests
-  if (req.method === 'OPTIONS') {
-    const isOriginAllowed = origin && allowedOrigins.includes(origin)
-    if (isOriginAllowed) {
-      res.setHeader('Access-Control-Allow-Origin', origin)
-      res.setHeader('Vary', 'Origin')
-    }
-    return res.status(204).end()
-  }
+  if (handleCors(req, res)) return
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  // Check origin for actual requests
-  const isOriginAllowed = origin && allowedOrigins.includes(origin)
-  if (isOriginAllowed) {
-    res.setHeader('Access-Control-Allow-Origin', origin)
-    res.setHeader('Vary', 'Origin')
-  } else if (origin) {
-    // Log for debugging
-    console.log('Origin not allowed:', origin, 'Allowed:', allowedOrigins)
-    return res.status(403).json({ 
-      error: 'Origin not allowed',
-      received: origin,
-      allowed: allowedOrigins
-    })
-  }
-
-  // ---- Parse JSON body
-  let body = req.body
-  if (typeof body === 'string') {
-    try {
-      body = JSON.parse(body)
-    } catch {
-      return res.status(400).json({ error: 'Invalid JSON' })
-    }
+  const body = parseJsonBody(req)
+  if (body === undefined) {
+    return res.status(400).json({ error: 'Invalid JSON' })
   }
 
   const name = body?.name

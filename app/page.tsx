@@ -1,6 +1,7 @@
 import Script from 'next/script'
 import home from '../site/content/home.json'
 import about from '../site/content/about.json'
+import myla from '../site/content/myla.json'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
               <li><a href="#services">Services</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="/myla">MyLa</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -70,6 +72,37 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="meet-myla" className="meet-myla section">
+          <div className="container">
+            <h2 className="meet-myla-heading">{myla.homeFeature.heading}</h2>
+            <p className="meet-myla-subheading">{myla.homeFeature.subheading}</p>
+            <div className="row gy-4">
+              <div className="col-md-6">
+                <div className="meet-myla-card">
+                  <span className="meet-myla-rule" aria-hidden="true"></span>
+                  <h3>{myla.homeFeature.staysCard.title}</h3>
+                  <p>{myla.homeFeature.staysCard.text}</p>
+                  <a href="/myla#stays" className="meet-myla-btn">{myla.homeFeature.staysCard.cta}</a>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="meet-myla-card">
+                  <span className="meet-myla-rule" aria-hidden="true"></span>
+                  <div className="meet-myla-title-row">
+                    <h3>{myla.homeFeature.transportCard.title}</h3>
+                    {myla.transportStatus !== 'live' && (
+                      <span className="meet-myla-badge">{myla.transport.badge}</span>
+                    )}
+                  </div>
+                  <p>{myla.homeFeature.transportCard.text}</p>
+                  <a href="/myla#transport" className="meet-myla-btn">{myla.homeFeature.transportCard.cta}</a>
+                </div>
+              </div>
+            </div>
+            <p className="meet-myla-note">{myla.homeFeature.note}</p>
           </div>
         </section>
 

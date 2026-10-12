@@ -1,0 +1,129 @@
+{
+  "transportStatus": "coming-soon",
+  "brand": {
+    "name": "MyLa",
+    "logo": { "src": "/myla/logo-PLACEHOLDER.svg", "alt": "MyLa logo" },
+    "staysMascot": {
+      "src": "/myla/mascot-stays-host-PLACEHOLDER.svg",
+      "alt": "MyLa Stays mascot holding a gold house key"
+    },
+    "transportMascot": {
+      "src": "/myla/mascot-transport-courier-PLACEHOLDER.svg",
+      "alt": "MyLa Transport courier mascot with a backpack"
+    }
+  },
+  "meta": {
+    "title": "MyLa | Furnished Stays & Goods Transport",
+    "description": "MyLa Stays offers furnished short- and mid-term stays. MyLa Transport courier and goods delivery is coming soon."
+  },
+  "homeFeature": {
+    "heading": "Meet MyLa",
+    "subheading": "Explore furnished stays and our upcoming goods transport services.",
+    "staysCard": {
+      "title": "MyLa Stays",
+      "text": "Furnished short- and mid-term stays",
+      "cta": "Explore Stays"
+    },
+    "transportCard": {
+      "title": "MyLa Transport",
+      "text": "Courier & goods transport",
+      "cta": "Learn More"
+    },
+    "note": "Both links open sections of the same MyLa page."
+  },
+  "hero": {
+    "headline": "A place to stay. A way to move forward.",
+    "intro": "Discover MyLa Stays and MyLa Transport.",
+    "staysButton": "Explore Stays",
+    "transportButton": "Explore Transport"
+  },
+  "stays": {
+    "eyebrow": "MyLa Stays",
+    "headline": "Make yourself at home.",
+    "description": "Furnished short- and mid-term stays for work, relocation, and life in between.",
+    "gallery": [
+      { "src": "/myla/stays-living-room-PLACEHOLDER.svg", "alt": "Living room (placeholder)" },
+      { "src": "/myla/stays-bedroom-PLACEHOLDER.svg", "alt": "Bedroom (placeholder)" },
+      { "src": "/myla/stays-kitchen-PLACEHOLDER.svg", "alt": "Kitchen (placeholder)" }
+    ],
+    "awayFromHome": {
+      "heading": "Your home away from home.",
+      "text": "Explore the property, review rental details, and ask us about your dates."
+    },
+    "location": {
+      "heading": "Location",
+      "text": "TODO: Neighborhood, city, and state (client to confirm how specific to make this public)."
+    },
+    "amenities": {
+      "heading": "Amenities",
+      "items": [
+        "TODO: Fully furnished",
+        "TODO: High-speed Wi-Fi",
+        "TODO: Full kitchen",
+        "TODO: In-unit laundry",
+        "TODO: Parking"
+      ]
+    },
+    "terms": {
+      "heading": "Rental Terms",
+      "items": [
+        "TODO: Minimum stay length",
+        "TODO: Pricing or rate range",
+        "TODO: Deposit and cancellation policy",
+        "TODO: Pet and smoking policy"
+      ]
+    },
+    "hosts": {
+      "heading": "Meet Your Hosts",
+      "text": "TODO: Short intro to Courtney and Matrell (client to supply bios)."
+    },
+    "faqHeading": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "How long can I stay?",
+        "answer": "TODO: Client to confirm minimum and maximum stay lengths."
+      },
+      {
+        "question": "How do I confirm availability?",
+        "answer": "Send an inquiry with your dates below. Availability is confirmed after we review your inquiry."
+      },
+      {
+        "question": "Are utilities and Wi-Fi included?",
+        "answer": "TODO: Client to confirm."
+      }
+    ],
+    "furnishedFinder": {
+      "label": "View on Furnished Finder",
+      "url": "https://www.furnishedfinder.com/"
+    },
+    "form": {
+      "heading": "Inquire about your stay",
+      "subheading": "Availability confirmed after inquiry.",
+      "submitLabel": "Inquire About Availability",
+      "note": "Availability confirmed after inquiry.",
+      "successMessage": "Thank you! Your inquiry has been sent. We'll be in touch to confirm availability.",
+      "errorMessage": "Sorry, your inquiry could not be sent. Please try again or email us directly."
+    }
+  },
+  "transport": {
+    "badge": "Coming Soon",
+    "heading": "MyLa Transport",
+    "description": "Courier & goods transport.",
+    "supportingText": "Interested in future delivery services? Let's connect.",
+    "goodsOnlyNote": "Goods only. No passenger services.",
+    "vanImage": {
+      "src": "/myla/transport-van-PLACEHOLDER.svg",
+      "alt": "MyLa Transport van (placeholder)"
+    },
+    "form": {
+      "heading": "Tell us about your delivery need",
+      "submitLabel": "Contact Us About Transport",
+      "comingSoonNote": "Collecting interest. Delivery bookings are not yet open.",
+      "successMessage": "Thank you! We've received your message and will reach out.",
+      "errorMessage": "Sorry, your message could not be sent. Please try again."
+    }
+  },
+  "footer": {
+    "backLabel": "Back to CoJo LLC"
+  }
+}

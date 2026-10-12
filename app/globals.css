@@ -125,3 +125,91 @@ select {
 [style*="background: var(--contrast-color)"] {
   color: #fff !important;
 }
+
+/* Meet MyLa (home) */
+#meet-myla {
+  background-color: #fff;
+}
+
+#meet-myla .meet-myla-heading {
+  font-family: var(--font-gelasio), serif;
+  font-size: clamp(2.2rem, 6vw, 3.25rem);
+  font-weight: 700;
+  color: #0b1530;
+  margin-bottom: 0.5rem;
+}
+
+#meet-myla .meet-myla-subheading {
+  font-size: 1.15rem;
+  color: #4a4f5c;
+  margin-bottom: 2rem;
+}
+
+#meet-myla .meet-myla-card {
+  height: 100%;
+  border: 2px solid #0f4d34;
+  border-radius: 10px;
+  padding: 1.75rem;
+  background: #fff;
+}
+
+#meet-myla .meet-myla-rule {
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: #d4a63a;
+  margin-bottom: 1rem;
+}
+
+#meet-myla .meet-myla-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#meet-myla h3 {
+  font-family: var(--font-gelasio), serif;
+  font-weight: 700;
+  color: #0f4d34;
+  margin-bottom: 0.5rem;
+}
+
+#meet-myla .meet-myla-badge {
+  background: #fbf0cf;
+  border: 1px solid #d4a63a;
+  color: #6b4e0f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+#meet-myla .meet-myla-card p {
+  color: #4a4f5c;
+}
+
+#meet-myla .meet-myla-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background: #d4a63a;
+  color: #1d2420;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+#meet-myla .meet-myla-btn:hover,
+#meet-myla .meet-myla-btn:focus-visible {
+  background: #c0942c;
+  color: #1d2420;
+}
+
+#meet-myla .meet-myla-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7080;
+  margin: 1.5rem 0 0;
+}
