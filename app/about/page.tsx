@@ -110,6 +110,11 @@ export default function AboutPage() {
                       {paragraph}
                     </p>
                   ))}
+                  <div className="cta-button">
+                    <a href={about.teamBuildingDeck.href} className="btn btn-primary" download>
+                      {about.teamBuildingDeck.label}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

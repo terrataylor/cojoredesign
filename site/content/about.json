@@ -19,5 +19,10 @@
       "src": "/assets/img/about.jpg",
       "alt": "About Courtney Johnson"
     }
+  },
+  "teamBuildingDeck": {
+    "label": "Download my Team building-deck",
+    "aboutTemplateLabel": "Download My Team Building Deck",
+    "href": "/assets/Courtney_Johnson_Team_Building_Deck.pptx"
   }
 }

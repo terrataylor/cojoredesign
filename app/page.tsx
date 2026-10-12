@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import home from '../site/content/home.json'
+import about from '../site/content/about.json'
 
 export default function Home() {
   return (
@@ -87,9 +88,9 @@ export default function Home() {
                     clarity, strategy, and impact.
                   </p>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.
+                    Courtney&apos;s programs are built for leaders who need clear framing, credible operating context,
+                    and discussion that moves from insight to decision—whether the room is a board retreat, a
+                    leadership summit, or a moderated conversation with executives and authors.
                   </p>
                   <div className="steps-cta">
                     <a href="/about" className="btn btn-outline">Learn More</a>
@@ -181,10 +182,18 @@ export default function Home() {
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                 <div className="about-content">
                   <h2>We Help Businesses Reach Their Full Potential</h2>
-                  <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                  <p className="lead">
+                    CoJo LLC serves as Courtney Johnson&apos;s private investment and operating platform, focused on
+                    strategic assets, real estate holdings, and business initiatives that support long-term value creation.
+                  </p>
+                  <p>
+                    The platform reflects a disciplined approach to capital stewardship, operational oversight, and
+                    partnership-driven growth — perspectives she brings into corporate governance environments.
+                  </p>
                   <div className="cta-button">
-                    <a href="#services" className="btn btn-primary">Learn More About Us</a>
+                    <a href={about.teamBuildingDeck.href} className="btn btn-primary" download>
+                      {about.teamBuildingDeck.aboutTemplateLabel}
+                    </a>
                   </div>
                 </div>
               </div>

@@ -43,6 +43,12 @@ a:visited {
   background-color: #6E43DB !important;
 }
 
+.header .btn-getstarted,
+.header .btn-getstarted:focus,
+.header .btn-getstarted:hover {
+  font-family: var(--font-lexend), sans-serif;
+}
+
 /* Executive summary (home #about) body copy */
 #about .about-content p {
   font-size: 0.9rem;
