@@ -6,7 +6,7 @@ import myla from '../site/content/myla.json'
 export default function Home() {
   return (
     <>
-      <header id="header" className="header d-flex align-items-center fixed-top">
+      <header id="header" className="header header-over-hero d-flex align-items-center fixed-top">
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <a href="/" className="logo d-flex align-items-center me-auto me-xl-0">
             <img
@@ -40,35 +40,27 @@ export default function Home() {
       </header>
 
       <main className="main">
-        <section id="hero" className="hero section dark-background">
+        <section id="hero" className="hero home-hero section dark-background">
           <div className="container" data-aos="fade-up" data-aos-delay="100">
-            <div className="row align-items-center">
+            <div className="row align-items-center gy-5">
               <div className="col-lg-6">
-                <div className="hero-image" data-aos="zoom-out" data-aos-delay="300">
-                  <img
-                    src="/assets/img/courtney.png"
-                    alt="Courtney Johnson"
-                    className="img-fluid"
-                    style={{ width: '53%', margin: '0 auto', display: 'block', boxShadow: 'none' }}
-                  />
+                <div className="hero-content" data-aos="fade-up" data-aos-delay="200">
+                  <h1 className="hero-name">{home.hero.name}</h1>
+                  <p className="hero-org">{home.hero.organization}</p>
+                  <p className="hero-tagline">{home.hero.tagline}</p>
+                  <div className="hero-btns">
+                    <a href={home.hero.primaryCta.href} className="btn hero-btn-bio" download>
+                      {home.hero.primaryCta.label}
+                    </a>
+                    <a href={home.hero.secondaryCta.href} className="btn hero-btn-speaking">
+                      {home.hero.secondaryCta.label}
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="hero-content" data-aos="fade-up" data-aos-delay="200">
-                  <h2>{home.hero.headline}</h2>
-                  <p>
-                    Courtney Johnson
-                    <br />
-                    CoJo LLC
-                    <br />
-                    Board Leader, Strategic Operator & Community Impact Executive
-                  </p>
-                  <div className="hero-btns">
-                    <a href={home.hero.primaryCta.href} className="btn btn-primary" download>
-                      Download my Board Bio
-                    </a>
-                    <a href="#services" className="btn btn-outline">Our Approach</a>
-                  </div>
+                <div className="hero-portrait" data-aos="zoom-out" data-aos-delay="300">
+                  <img src={home.hero.image.src} alt={home.hero.image.alt} />
                 </div>
               </div>
             </div>

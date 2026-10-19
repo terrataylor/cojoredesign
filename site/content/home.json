@@ -9,6 +9,10 @@
       "href": "/assets/docs/Courtney_Johnson_Board_Bio.docx",
       "download": true
     },
+    "secondaryCta": {
+      "label": "Speaking Inquiries",
+      "href": "#contact"
+    },
     "image": {
       "src": "/assets/img/courtney.png",
       "alt": "Courtney Johnson"
