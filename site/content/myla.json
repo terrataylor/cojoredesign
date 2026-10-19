@@ -112,8 +112,8 @@
     "supportingText": "Interested in future delivery services? Let's connect.",
     "goodsOnlyNote": "Goods only. No passenger services.",
     "vanImage": {
-      "src": "/myla/transport-van-PLACEHOLDER.svg",
-      "alt": "MyLa Transport van (placeholder)"
+      "src": "/myla/transport-van.jpg",
+      "alt": "Dark green MyLa cargo van with the gold palmetto logo, driving past a city skyline"
     },
     "form": {
       "heading": "Tell us about your delivery need",
