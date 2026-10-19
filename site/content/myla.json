@@ -42,9 +42,9 @@
     "headline": "Make yourself at home.",
     "description": "Furnished short- and mid-term stays for work, relocation, and life in between.",
     "gallery": [
-      { "src": "/myla/stays-living-room-PLACEHOLDER.svg", "alt": "Living room (placeholder)" },
+      { "src": "/myla/stays-living-room.jpg", "alt": "Bright living room with a cream sofa, green velvet armchair, and round wood coffee table" },
       { "src": "/myla/stays-bedroom-PLACEHOLDER.svg", "alt": "Bedroom (placeholder)" },
-      { "src": "/myla/stays-kitchen-PLACEHOLDER.svg", "alt": "Kitchen (placeholder)" }
+      { "src": "/myla/stays-kitchen.jpg", "alt": "Kitchen with white cabinets, stainless steel appliances, and an island with three counter stools" }
     ],
     "awayFromHome": {
       "heading": "Your home away from home.",
