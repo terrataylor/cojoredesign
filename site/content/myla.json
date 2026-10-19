@@ -43,7 +43,7 @@
     "description": "Furnished short- and mid-term stays for work, relocation, and life in between.",
     "gallery": [
       { "src": "/myla/stays-living-room.jpg", "alt": "Bright living room with a cream sofa, green velvet armchair, and round wood coffee table" },
-      { "src": "/myla/stays-bedroom-PLACEHOLDER.svg", "alt": "Bedroom (placeholder)" },
+      { "src": "/myla/stays-bedroom.png", "alt": "Warm bedroom with an upholstered headboard, white bedding, green throw, and bedside lamps" },
       { "src": "/myla/stays-kitchen.jpg", "alt": "Kitchen with white cabinets, stainless steel appliances, and an island with three counter stools" }
     ],
     "awayFromHome": {
