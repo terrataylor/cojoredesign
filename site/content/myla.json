@@ -2,7 +2,7 @@
   "transportStatus": "coming-soon",
   "brand": {
     "name": "MyLa",
-    "logo": { "src": "/myla/logo-PLACEHOLDER.svg", "alt": "MyLa logo" },
+    "logo": { "src": "/myla/myla-logo.jpg", "alt": "MyLa logo" },
     "staysMascot": {
       "src": "/myla/mascot-stays-host-PLACEHOLDER.svg",
       "alt": "MyLa Stays mascot holding a gold house key"

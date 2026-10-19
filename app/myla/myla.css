@@ -167,15 +167,16 @@
 .myla-header-logo {
   align-self: start;
   justify-self: center;
-  background: var(--myla-emerald);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 6px 16px rgba(15, 77, 52, 0.25);
+  margin-top: 8px;
+  line-height: 0;
 }
 
+/* The logo JPG has white corners outside its rounded tile; the radius clips them. */
 .myla-header-logo img {
-  height: 48px;
+  height: 56px;
   width: auto;
+  border-radius: 8%;
+  box-shadow: 0 6px 16px rgba(15, 77, 52, 0.3);
 }
 
 .myla-back-label {
@@ -587,8 +588,9 @@
 }
 
 .myla-footer-logo {
-  height: 72px;
+  height: 96px;
   width: auto;
+  border-radius: 8%;
 }
 
 .myla-footer-nav {
@@ -632,7 +634,7 @@
   }
 
   .myla-header-logo img {
-    height: 64px;
+    height: 80px;
   }
 
   .myla-header-nav {
@@ -668,7 +670,7 @@
   }
 
   .myla-header-logo img {
-    height: 80px;
+    height: 96px;
   }
 
   .myla-hero {
