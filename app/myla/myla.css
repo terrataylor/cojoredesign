@@ -581,9 +581,10 @@
   align-items: end;
 }
 
+/* Ratio must equal the van/mascot column ratio (1.6fr / 1fr) so both share one height. */
 .myla-transport-van {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 8 / 5;
   object-fit: cover;
   object-position: center 60%;
   border-radius: 8px;
