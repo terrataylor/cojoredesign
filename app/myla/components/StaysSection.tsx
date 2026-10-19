@@ -37,6 +37,7 @@ export default function StaysSection() {
           </div>
         </div>
 
+        {/* Hidden to match the approved mockup; restore when the client supplies this content.
         <div className="myla-details">
           <div className="myla-detail-card">
             <h3><i className="bi bi-geo-alt" aria-hidden="true"></i> {stays.location.heading}</h3>
@@ -71,6 +72,7 @@ export default function StaysSection() {
             ))}
           </div>
         </div>
+        */}
 
         <div id="inquire" className="myla-inquiry-card">
           <div className="myla-inquiry-body">

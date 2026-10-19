@@ -7,7 +7,11 @@ export default function MylaHero() {
     <section id="top" className="myla-hero">
       <div className="myla-container myla-hero-inner">
         <div className="myla-hero-copy">
-          <h1>{hero.headline}</h1>
+          <h1>
+            {hero.headline.split(/(?<=\.)\s+/).map((line) => (
+              <span key={line} className="myla-hero-line">{line}</span>
+            ))}
+          </h1>
           <p className="myla-hero-intro">{hero.intro}</p>
           <div className="myla-hero-buttons">
             <a href="#stays" className="myla-btn myla-btn-primary">

@@ -1,5 +1,5 @@
 import myla from '../../../site/content/myla.json'
-import InquiryForm from './InquiryForm'
+import TransportInterest from './TransportInterest'
 
 export default function TransportSection() {
   const { transport, brand, transportStatus } = myla
@@ -13,11 +13,10 @@ export default function TransportSection() {
           <h2>{transport.heading}</h2>
           <p className="myla-lead">{transport.description}</p>
           <p>{transport.supportingText}</p>
+          {/* Hidden to match the approved mockup.
           <p className="myla-goods-only">{transport.goodsOnlyNote}</p>
-          <div className="myla-transport-form">
-            <h3>{transport.form.heading}</h3>
-            <InquiryForm type="transport" />
-          </div>
+          */}
+          <TransportInterest />
         </div>
         <div className="myla-transport-visuals">
           <img

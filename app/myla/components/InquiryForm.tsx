@@ -129,6 +129,7 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
               {errors.email && <span className="myla-error">{errors.email.message}</span>}
             </div>
 
+            {/* Hidden to match the approved mockup.
             <div className="myla-field">
               <label htmlFor={id('phone')}>Phone <span className="myla-optional">(optional)</span></label>
               <input
@@ -143,6 +144,7 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
               />
               {errors.phone && <span className="myla-error">{errors.phone.message}</span>}
             </div>
+            */}
 
             <div className="myla-field">
               <label htmlFor={id('arrival')}>Arrival</label>
@@ -195,6 +197,7 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
               {errors.guests && <span className="myla-error">{errors.guests.message}</span>}
             </div>
 
+            {/* Hidden to match the approved mockup.
             <div className="myla-field myla-field-full">
               <label htmlFor={id('questions')}>Questions <span className="myla-optional">(optional)</span></label>
               <textarea
@@ -204,6 +207,7 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
                 {...register('questions')}
               />
             </div>
+            */}
           </>
         ) : (
           <>
@@ -243,7 +247,9 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
         {status === 'loading' ? 'Sending…' : copy.submitLabel}
       </button>
 
+      {/* Hidden to match the approved mockup, which shows this note under the heading only.
       {isStays && <p className="myla-form-note">{myla.stays.form.note}</p>}
+      */}
       {showComingSoonNote && <p className="myla-form-note">{myla.transport.form.comingSoonNote}</p>}
 
       <div aria-live="polite" role="status">
