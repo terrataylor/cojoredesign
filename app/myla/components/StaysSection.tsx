@@ -1,9 +1,9 @@
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 import InquiryForm from './InquiryForm'
 
 export default function StaysSection() {
-  const { stays, brand } = myla
-  const [featured, ...rest] = stays.gallery
+  const { stays, brand, visibility } = useMylaContent()
+  const [featured, ...rest] = stays.gallery ?? []
 
   return (
     <section id="stays" className="myla-stays">
@@ -20,8 +20,8 @@ export default function StaysSection() {
         </div>
 
         <div className="myla-gallery">
-          {rest.map((photo) => (
-            <img key={photo.src} src={photo.src} alt={photo.alt} />
+          {rest.map((photo, i) => (
+            <img key={`${photo.src}-${i}`} src={photo.src} alt={photo.alt} />
           ))}
           <div className="myla-away-card">
             <h3>{stays.awayFromHome.heading}</h3>
@@ -37,42 +37,48 @@ export default function StaysSection() {
           </div>
         </div>
 
-        {/* Hidden to match the approved mockup; restore when the client supplies this content.
-        <div className="myla-details">
-          <div className="myla-detail-card">
-            <h3><i className="bi bi-geo-alt" aria-hidden="true"></i> {stays.location.heading}</h3>
-            <p>{stays.location.text}</p>
+        {visibility?.details && (
+          <div className="myla-details">
+            <div className="myla-detail-card">
+              <h3><i className="bi bi-geo-alt" aria-hidden="true"></i> {stays.location.heading}</h3>
+              <p>{stays.location.text}</p>
+            </div>
+            <div className="myla-detail-card">
+              <h3><i className="bi bi-house-check" aria-hidden="true"></i> {stays.amenities.heading}</h3>
+              <ul>
+                {(stays.amenities.items ?? []).map((item, i) => <li key={i}>{item}</li>)}
+              </ul>
+            </div>
+            <div className="myla-detail-card">
+              <h3><i className="bi bi-file-earmark-text" aria-hidden="true"></i> {stays.terms.heading}</h3>
+              <ul>
+                {(stays.terms.items ?? []).map((item, i) => <li key={i}>{item}</li>)}
+              </ul>
+            </div>
           </div>
-          <div className="myla-detail-card">
-            <h3><i className="bi bi-house-check" aria-hidden="true"></i> {stays.amenities.heading}</h3>
-            <ul>
-              {stays.amenities.items.map((item) => <li key={item}>{item}</li>)}
-            </ul>
-          </div>
-          <div className="myla-detail-card">
-            <h3><i className="bi bi-file-earmark-text" aria-hidden="true"></i> {stays.terms.heading}</h3>
-            <ul>
-              {stays.terms.items.map((item) => <li key={item}>{item}</li>)}
-            </ul>
-          </div>
-        </div>
+        )}
 
-        <div className="myla-hosts-faq">
-          <div className="myla-hosts">
-            <h3>{stays.hosts.heading}</h3>
-            <p>{stays.hosts.text}</p>
+        {(visibility?.hosts || visibility?.faq) && (
+          <div className="myla-hosts-faq">
+            {visibility.hosts && (
+              <div className="myla-hosts">
+                <h3>{stays.hosts.heading}</h3>
+                <p>{stays.hosts.text}</p>
+              </div>
+            )}
+            {visibility.faq && (
+              <div className="myla-faq">
+                <h3>{stays.faqHeading}</h3>
+                {(stays.faqs ?? []).map((faq, i) => (
+                  <details key={i}>
+                    <summary>{faq.question}</summary>
+                    <p>{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            )}
           </div>
-          <div className="myla-faq">
-            <h3>{stays.faqHeading}</h3>
-            {stays.faqs.map((faq) => (
-              <details key={faq.question}>
-                <summary>{faq.question}</summary>
-                <p>{faq.answer}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-        */}
+        )}
 
         <div id="inquire" className="myla-inquiry-card">
           <div className="myla-inquiry-body">

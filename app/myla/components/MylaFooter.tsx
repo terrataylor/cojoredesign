@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 
 export default function MylaFooter() {
+  const myla = useMylaContent()
+
   return (
     <footer className="myla-footer">
       <div className="myla-container myla-footer-inner">
@@ -13,11 +15,11 @@ export default function MylaFooter() {
           <span className="myla-footer-sep" aria-hidden="true">|</span>
           <Link href="/">{myla.footer.backLabel}</Link>
         </nav>
-        {/* Hidden to match the approved mockup.
-        <p className="myla-footer-copy">
-          &copy; {new Date().getFullYear()} MyLa. All rights reserved.
-        </p>
-        */}
+        {myla.visibility?.footerCopyright && (
+          <p className="myla-footer-copy">
+            &copy; {new Date().getFullYear()} MyLa. All rights reserved.
+          </p>
+        )}
       </div>
     </footer>
   )

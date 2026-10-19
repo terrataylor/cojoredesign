@@ -1,8 +1,20 @@
 {
   "transportStatus": "coming-soon",
+  "visibility": {
+    "details": false,
+    "hosts": false,
+    "faq": false,
+    "phoneField": false,
+    "questionsField": false,
+    "goodsOnlyNote": false,
+    "footerCopyright": false
+  },
   "brand": {
     "name": "MyLa",
-    "logo": { "src": "/myla/myla-logo.jpg", "alt": "MyLa logo" },
+    "logo": {
+      "src": "/myla/myla-logo.jpg",
+      "alt": "MyLa logo"
+    },
     "staysMascot": {
       "src": "/myla/mascot-stays-host.jpg",
       "alt": "MyLa Stays mascot holding a gold house key"
@@ -42,13 +54,26 @@
     "headline": "Make yourself at home.",
     "description": "Furnished short- and mid-term stays for work, relocation, and life in between.",
     "gallery": [
-      { "src": "/myla/stays-living-room.jpg", "alt": "Bright living room with a cream sofa, green velvet armchair, and round wood coffee table" },
-      { "src": "/myla/stays-bedroom.png", "alt": "Warm bedroom with an upholstered headboard, white bedding, green throw, and bedside lamps" },
-      { "src": "/myla/stays-kitchen.jpg", "alt": "Kitchen with white cabinets, stainless steel appliances, and an island with three counter stools" }
+      {
+        "src": "/myla/stays-living-room.jpg",
+        "alt": "Bright living room with a cream sofa, green velvet armchair, and round wood coffee table"
+      },
+      {
+        "src": "/myla/stays-bedroom.png",
+        "alt": "Warm bedroom with an upholstered headboard, white bedding, green throw, and bedside lamps"
+      },
+      {
+        "src": "/myla/stays-kitchen.jpg",
+        "alt": "Kitchen with white cabinets, stainless steel appliances, and an island with three counter stools"
+      }
     ],
     "awayFromHome": {
       "heading": "Your home away from home.",
       "text": "Explore the property, review rental details, and ask us about your dates."
+    },
+    "furnishedFinder": {
+      "label": "View on Furnished Finder",
+      "url": "https://www.furnishedfinder.com/"
     },
     "location": {
       "heading": "Location",
@@ -92,10 +117,6 @@
         "answer": "TODO: Client to confirm."
       }
     ],
-    "furnishedFinder": {
-      "label": "View on Furnished Finder",
-      "url": "https://www.furnishedfinder.com/"
-    },
     "form": {
       "heading": "Inquire about your stay",
       "subheading": "Availability confirmed after inquiry.",

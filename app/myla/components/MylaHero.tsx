@@ -1,15 +1,15 @@
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 
 export default function MylaHero() {
-  const { hero, brand } = myla
+  const { hero, brand } = useMylaContent()
 
   return (
     <section id="top" className="myla-hero">
       <div className="myla-container myla-hero-inner">
         <div className="myla-hero-copy">
           <h1>
-            {hero.headline.split(/(?<=\.)\s+/).map((line) => (
-              <span key={line} className="myla-hero-line">{line}</span>
+            {(hero.headline ?? '').split(/(?<=\.)\s+/).map((line, i) => (
+              <span key={i} className="myla-hero-line">{line}</span>
             ))}
           </h1>
           <p className="myla-hero-intro">{hero.intro}</p>

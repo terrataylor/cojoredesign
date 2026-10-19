@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 
 type InquiryType = 'stays' | 'transport'
 
@@ -33,6 +33,7 @@ function localToday() {
 }
 
 export default function InquiryForm({ type }: { type: InquiryType }) {
+  const myla = useMylaContent()
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const {
     register,
@@ -129,22 +130,22 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
               {errors.email && <span className="myla-error">{errors.email.message}</span>}
             </div>
 
-            {/* Hidden to match the approved mockup.
-            <div className="myla-field">
-              <label htmlFor={id('phone')}>Phone <span className="myla-optional">(optional)</span></label>
-              <input
-                id={id('phone')}
-                type="tel"
-                autoComplete="tel"
-                placeholder="(555) 555-5555"
-                aria-invalid={!!errors.phone}
-                {...register('phone', {
-                  validate: (v) => !v || isPhone(v) || 'Enter a valid phone number',
-                })}
-              />
-              {errors.phone && <span className="myla-error">{errors.phone.message}</span>}
-            </div>
-            */}
+            {myla.visibility?.phoneField && (
+              <div className="myla-field">
+                <label htmlFor={id('phone')}>Phone <span className="myla-optional">(optional)</span></label>
+                <input
+                  id={id('phone')}
+                  type="tel"
+                  autoComplete="tel"
+                  placeholder="(555) 555-5555"
+                  aria-invalid={!!errors.phone}
+                  {...register('phone', {
+                    validate: (v) => !v || isPhone(v) || 'Enter a valid phone number',
+                  })}
+                />
+                {errors.phone && <span className="myla-error">{errors.phone.message}</span>}
+              </div>
+            )}
 
             <div className="myla-field">
               <label htmlFor={id('arrival')}>Arrival</label>
@@ -197,17 +198,17 @@ export default function InquiryForm({ type }: { type: InquiryType }) {
               {errors.guests && <span className="myla-error">{errors.guests.message}</span>}
             </div>
 
-            {/* Hidden to match the approved mockup.
-            <div className="myla-field myla-field-full">
-              <label htmlFor={id('questions')}>Questions <span className="myla-optional">(optional)</span></label>
-              <textarea
-                id={id('questions')}
-                rows={3}
-                placeholder="Anything we should know about your stay?"
-                {...register('questions')}
-              />
-            </div>
-            */}
+            {myla.visibility?.questionsField && (
+              <div className="myla-field myla-field-full">
+                <label htmlFor={id('questions')}>Questions <span className="myla-optional">(optional)</span></label>
+                <textarea
+                  id={id('questions')}
+                  rows={3}
+                  placeholder="Anything we should know about your stay?"
+                  {...register('questions')}
+                />
+              </div>
+            )}
           </>
         ) : (
           <>

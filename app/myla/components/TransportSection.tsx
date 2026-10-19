@@ -1,8 +1,8 @@
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 import TransportInterest from './TransportInterest'
 
 export default function TransportSection() {
-  const { transport, brand, transportStatus } = myla
+  const { transport, brand, transportStatus, visibility } = useMylaContent()
   const comingSoon = transportStatus !== 'live'
 
   return (
@@ -13,9 +13,9 @@ export default function TransportSection() {
           <h2>{transport.heading}</h2>
           <p className="myla-lead">{transport.description}</p>
           <p>{transport.supportingText}</p>
-          {/* Hidden to match the approved mockup.
-          <p className="myla-goods-only">{transport.goodsOnlyNote}</p>
-          */}
+          {visibility?.goodsOnlyNote && (
+            <p className="myla-goods-only">{transport.goodsOnlyNote}</p>
+          )}
           <TransportInterest />
         </div>
         <div className="myla-transport-visuals">

@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 
 export default function MylaHeader() {
+  const myla = useMylaContent()
+
   return (
     <header className="myla-header">
       <div className="myla-container myla-header-inner">

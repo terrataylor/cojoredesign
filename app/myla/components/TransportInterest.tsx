@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import myla from '../../../site/content/myla.json'
+import { useMylaContent } from '../content'
 import InquiryForm from './InquiryForm'
 
 export default function TransportInterest() {
+  const myla = useMylaContent()
   const [open, setOpen] = useState(false)
   const { form } = myla.transport
   const comingSoon = myla.transportStatus !== 'live'

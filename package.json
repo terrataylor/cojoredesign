@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint",
     "copy-assets": "node scripts/copy-assets.js",
@@ -24,9 +24,11 @@
     "react-dom": "^18.3.0",
     "react-hook-form": "^7.51.0",
     "resend": "^4.0.0",
-    "swiper": "^11.1.0"
+    "swiper": "^11.1.0",
+    "tinacms": "^3.15.0"
   },
   "devDependencies": {
+    "@tinacms/cli": "^4.0.3",
     "@types/imagesloaded": "^4.1.7",
     "@types/isotope-layout": "^3.0.15",
     "@types/node": "^20.12.0",
