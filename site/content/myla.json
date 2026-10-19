@@ -4,11 +4,11 @@
     "name": "MyLa",
     "logo": { "src": "/myla/myla-logo.jpg", "alt": "MyLa logo" },
     "staysMascot": {
-      "src": "/myla/mascot-stays-host-PLACEHOLDER.svg",
+      "src": "/myla/mascot-stays-host.jpg",
       "alt": "MyLa Stays mascot holding a gold house key"
     },
     "transportMascot": {
-      "src": "/myla/mascot-transport-courier-PLACEHOLDER.svg",
+      "src": "/myla/mascot-transport-courier.jpg",
       "alt": "MyLa Transport courier mascot with a backpack"
     }
   },

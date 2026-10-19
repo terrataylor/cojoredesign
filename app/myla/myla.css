@@ -241,6 +241,20 @@
   margin: 0 auto;
 }
 
+/* Mascot JPGs have an opaque cream background, so they are framed as tiles. */
+.myla-hero-mascots img,
+.myla-inquiry-mascot,
+.myla-transport-mascot {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #fbf2e9;
+  border: 2px solid var(--myla-gold-light);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(15, 77, 52, 0.12);
+}
+
 /* Stays */
 .myla-stays {
   background: var(--myla-ivory);
